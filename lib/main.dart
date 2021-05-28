@@ -17,19 +17,7 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.greenAccent,
       ),
       body: Center(
-        child: Column(
-          children: [
-            Text(
-                'hello world',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: 'Pattaya',
-                )
-            ),
-            Text('i am naol')
-          ],
-        ),
+        child: Image.asset('assets/cyberpunk_2077.jpg'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => print('hello world'),
