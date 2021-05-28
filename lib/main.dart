@@ -11,7 +11,14 @@ void main() {
         body: Center(
           child: Column(
             children: [
-              Text('hello world'),
+              Text(
+                  'hello world',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Pattaya',
+                )
+              ),
               Text('i am naol')
             ],
           ),
@@ -19,7 +26,7 @@ void main() {
         floatingActionButton: FloatingActionButton(
           onPressed: () => print('hello world'),
           child: Text('World'),
-          backgroundColor: Colors.greenAccent[100],
+          backgroundColor: Colors.greenAccent,
         ),
       ),
     )
