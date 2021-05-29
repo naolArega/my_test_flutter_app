@@ -28,59 +28,30 @@ class Home extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Row(
-            children: [
-              Padding(
-                padding: EdgeInsets.symmetric(
-                  vertical: 20,
-                  horizontal: 30
-                ),
-                child: Text('This is a row'),
-              ),
-              Container(
-                margin: EdgeInsets.all(10),
-                child: Icon(
-                  Icons.account_circle
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.all(10),
-                child: Icon(
-                  Icons.account_circle
-                ),
-              ),
-            ]
+          Expanded(
+              child: Image.asset('assets/cyberpunk_2077.jpg')
           ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Padding(
-                padding: EdgeInsets.all(20),
-                child: Text('This is a column'),
-              ),
-              Container(
-                color: Colors.deepPurpleAccent,
-                padding: EdgeInsets.all(20),
-                child: Text(
-                    'Item one',
-                  style: TextStyle(
-                    fontFamily: 'Pattaya',
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-              Container(
-                color: Colors.redAccent,
-                padding: EdgeInsets.all(20),
-                child: Text(
-                    'Item two',
-                  style: TextStyle(
-                    fontFamily: 'Pattaya',
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-            ],
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(20),
+              color: Colors.blue[300],
+              child: Text('Hello world 1')
+            ),
+          ),
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(20),
+              color: Colors.red[300],
+              child: Text('Hello world 2')
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.all(20),
+              color: Colors.green[300],
+              child: Text('Hello world 3')
+            ),
           )
         ],
       ),
